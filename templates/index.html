@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1_title">Tradutor</h1>
+    <div class="container">
+      <div class="text_">
+        <h1>
+          Identificação Automática do Idioma Digitado
+          <br />
+          Suporte para Tradução em Dez Idiomas
+        </h1>
+        <br />
+      </div>
+      <form class="form" action="#" method="post">
+        <div class="info">
+          <input
+            value="{{input_text}}"
+            spellcheck="false"
+            name="text"
+            type="text"
+            placeholder="Digite o texto"
+          />
+          <br />
+
+          <select name="option" type="checkbox" name="teste">
+            <option class="input" value="pt">Português</option>
+            <option class="input" value="zh-CN">Chinês(Simplificado)</option>
+            <option class="input" value="zh-TW">Chinês(Tradicional)</option>
+            <option class="input" value="ko">Coreano</option>
+            <option class="input" value="es">Espanhol</option>
+            <option class="input" value="fr">Francês</option>
+            <option class="input" value="nl">Holandes</option>
+            <option class="input" value="en">Inglês</option>
+            <option class="input" value="jw">Japonês</option>
+            <option class="input" value="ru">Russo</option>
+          </select>
+          <br />
+
+          <textarea
+            name=""
+            spellcheck="false"
+            cols="30"
+            rows="5"
+            placeholder="Descrição..."
+          >
+{{ new_text }}</textarea
+          >
+          <button type="submit" class="bnt">Traduzir</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
