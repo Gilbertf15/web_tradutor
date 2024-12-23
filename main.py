@@ -3,8 +3,8 @@ from views import *
 
 
 class Flaskapp:
-   def __init__(self, name):
-      self.app = Flask(name)
+   def __init__(self):
+      self.app = Flask(__name__)
       self._registro_bluepoint()
 
    def _registro_bluepoint(self):
@@ -13,6 +13,6 @@ class Flaskapp:
    def run(self, host='127.0.0.1', port=5000, debug=False):
       self.app.run(host=host, port=port, debug=debug)
 
-app = Flaskapp(__name__)
+app = Flaskapp()
 if __name__ == '__main__':
    app.run(debug=True)
