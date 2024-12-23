@@ -13,6 +13,6 @@ class Flaskapp:
    def run(self, host='127.0.0.1', port=5000, debug=False):
       self.app.run(host=host, port=port, debug=debug)
 
-app = Flaskapp()
-if __name__ == '__main__':
-   app.run(debug=True)
+app = Flaskapp().app
+
+app.run(debug=True)
