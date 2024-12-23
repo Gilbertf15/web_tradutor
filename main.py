@@ -14,5 +14,6 @@ class Flaskapp:
       self.app.run(host=host, port=port, debug=debug)
 
 if __name__ == '__main__':
+   global app
    app = Flaskapp(__name__)
    app.run(debug=True)
