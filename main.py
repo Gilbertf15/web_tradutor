@@ -10,8 +10,7 @@ class Flaskapp:
    def _registro_bluepoint(self):
       self.app.register_blueprint(main_rotas)
 
-   def run(self, host='127.0.0.1', port=5000, debug=False):
-      self.app.run(host=host, port=port, debug=debug)
+
 
 app = Flaskapp().app
 
